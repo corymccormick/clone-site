@@ -6,8 +6,26 @@ body{
 
 .bgimage{
   background-image: url(/assets/cosmokramer2.png);
-  background-size: cover;
+  background-size: inherit;
   background-position: center;
-  padding:5px; 
+  min-height:35vh;
 }
 
+.relative{
+position: relative;
+}
+
+.font{
+  font-family: 'Fugaz One', cursive;
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-main-image {
+    background-image: url(/assets/cosmokramer2.png);
+  }
+  .title-tag  {
+    position:absolute;
+    top: 1.5rem;
+    right: 1.5em
+  }
+};

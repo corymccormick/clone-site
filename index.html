@@ -12,30 +12,26 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+
   <title>site-clone</title>
 </head>
 
 <body>
-  <header>
-    <div class="container-fluid sticky-top">
-      <div class="row bg-secondary text-white p-2 font-family">
-        <div class="col">
-          <i class="fas fa-beer"></i>
-          <span><strong>Kramerica Industries</strong></span>
-        </div>
-      </div>
-    </div>
-  </header>
+  <nav class="navbar sticky-top navbar-light bg-secondary">
+    <a class="navbar-brand" href="#"><i class="fas fa-beer fa-2x m-1"></i>Kramerica Industries</a>
+  </nav>
 
-  <main>
-    <div class="container-fluid">
+
+
+  <header>
+    <div class="container-fluid m-0">
       <!-- row 1 -->
-      <div class="row bgimage pt-5 pb-5">
-        <div class="col-3 bg-secondary">
-          <span> leave a message</span>
+      <div class="row bgimage p-5">
+        <div class="col-md-3 bg-secondary shadow">
           <form>
-            <div class="form-group">
+            <span class="p-1 text-white">Leave us a message </span>
+            <div class="form-group p-0">
               <label for="exampleFormControlInput1"></label>
               <input type="Name" class="form-control" id="Name" placeholder="Name">
             </div>
@@ -49,79 +45,103 @@
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="message"></textarea>
             </div>
           </form>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
             <label class="form-check-label" for="defaultCheck1">
-              By checking this box I confirm
+              <p>By checking this box I confirm and yada yada yada</p>
             </label>
           </div>
-          <a href="#" class="btn btn-primary">Submit</a>
+          <a href="#" class="btn btn-primary mb-3">Beep</a>
         </div>
-        <div class="col-8 text-white">
-          <H1>Kramerica Industries</H1>
-          <span>summer internship program, "make your own pizza pie" restaurant, the roll-out tie dispenser, and oil
-            bladder systems</span>
+        <div class="col-md-9 text-white text-left d-none d-md-block pl-5">
+          <H1 class="font">Kramerica Industries</H1>
+          <h4>Developers of Kramerica's summer internship program, "make your own pizza pie" restaurant, the roll-out
+            tie dispenser, the bro and
+            oil tanker bladder systems</h4>
         </div>
-
       </div>
     </div>
+  </header>
 
-    <!-- row 2 -->
-    <div class="row bg-secondary">
-      <div class="col-6">
+  <!-- row 2 -->
+  <main>
+    <div class="row bg-secondary align-items-center p-5 relative">
+      <div class="col-md-6 order-2">
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae odio exercitationem quod?
+        </h3>
         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquam cupiditate in, id eum
           voluptatibus consectetur sed recusandae culpa dolorum a perspiciatis ducimus cum amet reprehenderit ab.
           Error, repudiandae rem?</span>
       </div>
       <!-- overflow float card -->
-      <div class="col-6">
-        <ul class="list-group">
-          <li class="list-group-item ">An active item</li>
-          <li class="list-group-item">
-            <i class="far fa-calendar"></i>
-            A second item
-          </li>
-          <li class="list-group-item">A third item</li>
-          <li class="list-group-item">A fourth item</li>
-          <li class="list-group-item">And a fifth one</li>
-        </ul>
+      <div class="col-md-6 title-tag order-1">
+        <div class="card shadow">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-briefcase fa-2x m-2"></i>Internship Program</li>
+            <li class="list-group-item"><i class="fas fa-umbrella-beach fa-2x m-2"></i>"The Beach" Fragrance - smell
+              like you just came home from the beach
+            </li>
+            <li class="list-group-item"><i class="fas fa-coffee fa-2x m-2"></i>The Coffee Table Book - A coffee table
+              book about coffee tables!</li>
+            <li class="list-group-item"><i class="fas fa-swimmer fa-2x m-2"></i>East River Swimming Club</li>
+            <li class="list-group-item"><i class="fas fa-beer fa-2x m-2"></i>Heres to having fun all the time</li>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- row 3 -->
-    <div class="row bg-white">
-      <div class="col-3">
-        <img src="/assets/cosmokramer.png">
+    <div class="row bg-white p-5">
+      <div class="col-md-4">
+        <img src="//placehold.it/250x350">
       </div>
-      <div class="col-8">
-        <span>icon- Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laudantium minima ratione impedit.
-          Perspiciatis accusantium laborum, excepturi in suscipit dicta consequatur ullam impedit aspernatur obcaecati
-          harum reiciendis? Nihil, officiis consectetur?</span>
+      <div class="col-md-8 align-self-end">
+        <h3><i class="fas fa-hat-cowboy-side fa-3x m-2"></i>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+          laudantium minima ratione impedit.</h3>
+        <p>Perspiciatis accusantium laborum, excepturi in suscipit dicta consequatur ullam impedit aspernatur
+          obcaecati
+          harum reiciendis? Nihil, officiis consectetur?</p>
+        <button class="btn btn-primary ml-5">giddy up!</button>
       </div>
     </div>
     <!-- row 4 -->
-    <div class="row bg-secondary">
-      <div class="col-4">
-        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto vero debitis dolorem aliquid nam
-          distinctio ducimus provident perspiciatis esse. Nulla nihil fugit hic eius necessitatibus nam incidunt itaque
-          dignissimos ut!</span>
+    <div class="row bg-secondary text-center align-items-center justify-content-between p-5">
+      <div class="col-md-4 order-2 order-md-1">
+        <div class="card shadow">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
       </div>
-      <div class="col-4">
-        <img src="//placehold.it/100x50">
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto veritatis deserunt nemo soluta nesciunt sit
-          itaque tempore iste et minima recusandae quis, veniam aliquam architecto at autem perspiciatis impedit
-          quasi.</span>
-
+      <div class="col-md-4 order-1 order-md-2">
+        <div class="card shadow">
+          <img src="assets/kramerwork.gif" class="card-img-top">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-4">
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reiciendis incidunt esse explicabo soluta.
-          Doloremque, quia voluptatum iste necessitatibus quod quidem dicta deleniti itaque veritatis dolorum non facere
-          quaerat consequuntur?</span>
+      <div class="col-md-4 order-3">
+        <div class="card shadow">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
       </div>
     </div>
     <!-- row 5 -->
-    <div class="row bg-white">
+    <div class="row bg-light p-5">
       <div class="col">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, non. Tempora blanditiis, debitis consectetur
         mollitia maxime aut commodi quisquam facilis esse, modi repellendus ratione, officia alias dolorum laborum
@@ -132,11 +152,10 @@
   </main>
   <footer>
     <div class="container-fluid">
-      <div class="row bg-secondary">
-        <div class="col pb-5">
-          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus necessitatibus non veniam
-            repellat veritatis optio facilis libero, debitis, corporis mollitia alias accusamus commodi ab blanditiis,
-            voluptates at! Quaerat, sapiente.</span>
+      <div class="row bg-secondary p-5">
+        <div class="col">
+          <span p-5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus necessitatibus non veniam
+            repellat veritatis optio facilis libero, debitis, corporis mollitia alias accusamus.</span>
         </div>
       </div>
     </div>
