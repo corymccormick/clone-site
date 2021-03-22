@@ -5,7 +5,7 @@ body{
 }
 
 .bgimage{
-  background-image: url(/assets/cosmokramer2.png);
+  background-image: url(assets/cosmokramer2.png);
   background-size: inherit;
   background-position: center;
   min-height:35vh;
@@ -21,7 +21,7 @@ position: relative;
 
 @media only screen and (min-width: 768px) {
   .bg-main-image {
-    background-image: url(/assets/cosmokramer2.png);
+    background-image: url(assets/cosmokramer2.png);
   }
   .title-tag  {
     position:absolute;
